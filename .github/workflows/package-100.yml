@@ -16,7 +16,7 @@ jobs:
           powershell Compress-Archive -Path "10/100/*" -DestinationPath "100.zip"
 
       - name: Upload artifact
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4
         with:
           name: 100_package
           path: 100.zip
